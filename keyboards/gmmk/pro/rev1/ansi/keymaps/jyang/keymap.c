@@ -107,7 +107,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     return true;
 };
-/*
+
 bool encoder_update_user(uint8_t index, bool clockwise) {
 if (clockwise) {
 SEND_STRING(SS_DOWN(X_LCTL)SS_TAP(X_RGHT)SS_UP(X_LCTL));
@@ -116,7 +116,7 @@ SEND_STRING(SS_DOWN(X_LCTL)SS_TAP(X_LEFT)SS_UP(X_LCTL));
 }
 return true;
 }
-*/
+
 
 // RGB LED layout
 
@@ -132,17 +132,20 @@ return true;
 //  91, Side led 08                                                                                                                                                                                                        92, Side led 19
 
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
-    /*
-        for (int i = led_min; i <= led_max; i++) { // change all colors
-            RGB_MATRIX_INDICATOR_SET_COLOR(i, 100, 100, 100); // dim white?
+   
+        for (int i = led_min; i <= led_max; i++) { // change all colors 
+            RGB_MATRIX_INDICATOR_SET_COLOR(i, 0, 0, 0); // all off, side LEDs below
+
         }
-    */
+    
     int side_led_left[NUM_SIDE_LED] = {67, 70, 73, 76, 80, 83, 87, 91};
     int side_led_right[NUM_SIDE_LED] = {68, 71, 74, 77, 81, 84, 88, 92};
     for (int i = 0; i < NUM_SIDE_LED; i++) {
         RGB_MATRIX_INDICATOR_SET_COLOR(side_led_left[i], 0, 0, 255); //left side blue
-        RGB_MATRIX_INDICATOR_SET_COLOR(side_led_right[i], 200, 200, 0); // right side yellow
+        RGB_MATRIX_INDICATOR_SET_COLOR(side_led_right[i], 255, 255, 0); // right side yellow
     }
+
+    /*
 
     int blue_keys[NUM_BLUE] = {0, 6, 1, 7, 13, 2, 8, 14, 20, 25, 3, 9, 15, 21, 26, 31, 37, 4, 10, 16, 22, 27, 32, 38, 5, 11, 17, 33};
     int red_keys[NUM_RED] = {12, 18, 23, 28, 34, 39, 19, 24, 29, 35, 40, 45, 51, 30, 36, 41, 46, 52, 58, 42, 47, 53, 59, 43, 48, 54, 60, 49, 55, 65};
@@ -158,6 +161,7 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     for (int i = 0; i < NUM_YELLOW; i++) {
         RGB_MATRIX_INDICATOR_SET_COLOR(yellow_keys[i], 225, 225, 0);
     }
+    */
 
     // red caps indicator
     if (host_keyboard_led_state().caps_lock) {
