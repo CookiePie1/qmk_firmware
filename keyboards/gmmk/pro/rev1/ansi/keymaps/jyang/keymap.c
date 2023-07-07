@@ -16,8 +16,8 @@
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-        [0] = LAYOUT(KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL, LT(2,KC_MPLY), KC_GRV, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC, QK_MACRO_16, KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC, KC_BSLS, QK_MACRO_17, KC_CAPS, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_ENT, KC_HOME, KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, KC_UP, KC_END, KC_LCTL, KC_LGUI, KC_LALT, LT(3,KC_SPC), KC_RALT, TO(1), KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT),
-        [1] = LAYOUT(KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL, LT(2,KC_MPLY), KC_GRV, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_LBRC, KC_RBRC, KC_BSPC, QK_MACRO_16, KC_TAB, KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y, KC_F, KC_G, KC_C, KC_R, KC_L, KC_SLSH, KC_EQL, KC_BSLS, QK_MACRO_18, KC_CAPS, KC_A, KC_O, KC_E, KC_U, KC_I, KC_D, KC_H, KC_T, KC_N, KC_S, KC_MINS, KC_ENT, KC_HOME, KC_LSFT, KC_SCLN, KC_Q, KC_J, KC_K, KC_X, KC_B, KC_M, KC_W, KC_V, KC_Z, KC_RSFT, KC_UP, KC_END, KC_LCTL, KC_LGUI, KC_LALT, LT(2,KC_SPC), KC_RALT, TO(0), KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT),
+        [0] = LAYOUT(KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL, LT(2,KC_MPLY), KC_GRV, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC, QK_MACRO_16, KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC, KC_BSLS, QK_MACRO_18, KC_CAPS, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_ENT, KC_HOME, KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, KC_UP, KC_END, KC_LCTL, KC_LGUI, KC_LALT, LT(3,KC_SPC), KC_RALT, TO(1), KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT),
+        [1] = LAYOUT(KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL, LT(2,KC_MPLY), KC_GRV, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_LBRC, KC_RBRC, KC_BSPC, QK_MACRO_16, KC_TAB, KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y, KC_F, KC_G, KC_C, KC_R, KC_L, KC_SLSH, KC_EQL, KC_BSLS, QK_MACRO_17, KC_CAPS, KC_A, KC_O, KC_E, KC_U, KC_I, KC_D, KC_H, KC_T, KC_N, KC_S, KC_MINS, KC_ENT, KC_HOME, KC_LSFT, KC_SCLN, KC_Q, KC_J, KC_K, KC_X, KC_B, KC_M, KC_W, KC_V, KC_Z, KC_RSFT, KC_UP, KC_END, KC_LCTL, KC_LGUI, KC_LALT, LT(2,KC_SPC), KC_RALT, TO(0), KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT),
         [2] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, RGB_TOG, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, QK_MACRO_0, QK_MACRO_1, QK_MACRO_2, QK_MACRO_3, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, QK_MACRO_4, QK_MACRO_5, QK_MACRO_6, QK_MACRO_7, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO),
         [3] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, RGB_TOG, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, QK_MACRO_10, QK_MACRO_11, QK_MACRO_12, QK_MACRO_13, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, QK_MACRO_14, QK_MACRO_5, QK_MACRO_6, QK_MACRO_15, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO)
 };
@@ -107,7 +107,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     return true;
 };
-/*
+
 bool encoder_update_user(uint8_t index, bool clockwise) {
 if (clockwise) {
 SEND_STRING(SS_DOWN(X_LCTL)SS_TAP(X_RGHT)SS_UP(X_LCTL));
@@ -116,7 +116,7 @@ SEND_STRING(SS_DOWN(X_LCTL)SS_TAP(X_LEFT)SS_UP(X_LCTL));
 }
 return true;
 }
-*/
+
 
 // RGB LED layout
 
@@ -132,18 +132,19 @@ return true;
 //  91, Side led 08                                                                                                                                                                                                        92, Side led 19
 
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
-    /*
+    
         for (int i = led_min; i <= led_max; i++) { // change all colors 
-            RGB_MATRIX_INDICATOR_SET_COLOR(i, 100, 100, 100); // dim white?
+            RGB_MATRIX_INDICATOR_SET_COLOR(i, 0, 0, 0); // all off, side LEDs below
         }
-    */
+    
     int side_led_left[NUM_SIDE_LED] = {67, 70, 73, 76, 80, 83, 87, 91};
     int side_led_right[NUM_SIDE_LED] = {68, 71, 74, 77, 81, 84, 88, 92};
     for (int i = 0; i < NUM_SIDE_LED; i++) {    
         RGB_MATRIX_INDICATOR_SET_COLOR(side_led_left[i], 0, 0, 255); //left side blue
-        RGB_MATRIX_INDICATOR_SET_COLOR(side_led_right[i], 200, 200, 0); // right side yellow
+        RGB_MATRIX_INDICATOR_SET_COLOR(side_led_right[i], 255, 255, 0); // right side yellow
     }
-    
+
+    /*
     int blue_keys[NUM_BLUE] = {0, 6, 1, 7, 13, 2, 8, 14, 20, 25, 3, 9, 15, 21, 26, 31, 37, 4, 10, 16, 22, 27, 32, 38, 5, 11, 17, 33};
     int red_keys[NUM_RED] = {12, 18, 23, 28, 34, 39, 19, 24, 29, 35, 40, 45, 51, 30, 36, 41, 46, 52, 58, 42, 47, 53, 59, 43, 48, 54, 60, 49, 55, 65};
     int yellow_keys[NUM_YELLOW] = {44, 50, 56, 61, 66, 69, 57, 62, 78, 85, 72, 63, 89, 93, 75, 64, 96, 86, 90, 94, 82, 95, 97, 79};
@@ -158,7 +159,7 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     for (int i = 0; i < NUM_YELLOW; i++) {
         RGB_MATRIX_INDICATOR_SET_COLOR(yellow_keys[i], 225, 225, 0);
     }
-    
+    */
     // red caps indicator
     if (host_keyboard_led_state().caps_lock) {
         RGB_MATRIX_INDICATOR_SET_COLOR(67,255,0,0);
